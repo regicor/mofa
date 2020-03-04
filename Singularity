@@ -13,8 +13,7 @@ From:ubuntu:18.04
     add-apt-repository 'deb https://cloud.r-project.org/bin/linux/ubuntu bionic-cran35/'
     apt-get update
     apt-get install -y libcurl4-gnutls-dev libxml2-dev libssl-dev libmariadb-client-lgpl-dev ibglib2.0-dev libcairo2-dev \
-    ghostscript libxt-dev 
-    # libssh2-1-dev
+    ghostscript libxt-dev libssh2-1-dev
     # Installing R and python-pip
     apt-get install -y r-base python-pip
     # Installing MOFA python dependencies
