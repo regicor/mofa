@@ -3,6 +3,7 @@ From:ubuntu:18.04
 
 %post
     # Installing ubuntu dependencies
+    apt-get update
     apt-get install -y software-properties-common
     apt-get update
     add-apt-repository 'deb https://cloud.r-project.org/bin/linux/ubuntu disco-cran35/'
