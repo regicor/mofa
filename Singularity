@@ -4,6 +4,7 @@ From:ubuntu:18.04
 %post
     # Installing ubuntu dependencies
     apt-get update
+    apt-get install -y apt-utils
     DEBIAN_FRONTEND=noninteractive
     apt-get install -y tzdata
     apt-get install -y software-properties-common
