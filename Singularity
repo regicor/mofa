@@ -25,6 +25,7 @@ From:ubuntu:18.04
     Rscript -e 'r = getOption("repos"); r["CRAN"] = "https://cran.rstudio.com/"; options(repos = r); install.packages(c("devtools","BiocManager")); 
     Rscript -e 'r = getOption("repos"); r["CRAN"] = "https://cran.rstudio.com/"; options(repos = r); BiocManager::install(c("MultiAssayExperiment","Biobase","rhdf5","dplyr","reshape2","pheatmap","corrplot","ggplot2","ggbeeswarm","methods","scales","GGally","RColorBrewer","cowplot","ggrepel","doParallel","foreach","reticulate","grDevices","stats","utils"))'
     Rscript -e 'install.packages("devtools", dependencies = TRUE, repos = "https://cran.rstudio.com"); library(devtools); devtools::install_github("bioFAM/MOFA2/MOFA2", build_opts = c("--no-resave-data --no-build-vignettes"))'
+    #
 %test
     R --version
     
