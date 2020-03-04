@@ -3,6 +3,8 @@ From:ubuntu:18.04
 
 %post
     # Installing ubuntu dependencies
+    apt-get install -y software-properties-common
+    apt-get update
     add-apt-repository 'deb https://cloud.r-project.org/bin/linux/ubuntu disco-cran35/'
     apt-key adv --keyserver keyserver.ubuntu.com --recv-keys E298A3A825C0D65DFD57CBB651716619E084DAB9
     apt-get update
